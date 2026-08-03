@@ -1,5 +1,10 @@
 # IronFit Core
 
+![PHP](https://img.shields.io/badge/PHP-8.5-777BB4?logo=php&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-7.0-21759B?logo=wordpress&logoColor=white)
+![License](https://img.shields.io/badge/License-GPLv2-or-blue)
+![Version](https://img.shields.io/badge/Version-1.0.0-informational)
+
 A single-file procedural WordPress plugin providing custom post types, meta boxes, an admin dashboard, AJAX booking handler, and site-wide settings for the IronFit fitness theme.
 
 ## Features
@@ -15,7 +20,7 @@ A single-file procedural WordPress plugin providing custom post types, meta boxe
 ## Requirements
 
 - WordPress 5.0+
-- PHP 7.4+
+- PHP 8.0+
 
 ## Installation
 
@@ -27,13 +32,13 @@ A single-file procedural WordPress plugin providing custom post types, meta boxe
 
 ### Custom Post Types
 
-| CPT Slug | Label | Purpose | Meta Fields |
-|----------|-------|---------|-------------|
-| `ironfit_hero_slide` | Hero Slides | Homepage hero carousel | subtitle, description, btn_text, btn_url, btn2_text, btn2_url |
-| `ironfit_service` | Services | Service offerings grid | icon (emoji) |
-| `ironfit_testimonial` | Testimonials | Client reviews | quote, role, rating (1-5), result |
-| `ironfit_pricing` | Pricing Plans | Pricing cards | price, period, features, popular, btn_text |
-| `ironfit_booking` | Bookings | Form submissions | email, phone, goal, message, status |
+| CPT Slug              | Label         | Purpose                | Meta Fields                                                   |
+| --------------------- | ------------- | ---------------------- | ------------------------------------------------------------- |
+| `ironfit_hero_slide`  | Hero Slides   | Homepage hero carousel | subtitle, description, btn_text, btn_url, btn2_text, btn2_url |
+| `ironfit_service`     | Services      | Service offerings grid | icon (emoji)                                                  |
+| `ironfit_testimonial` | Testimonials  | Client reviews         | quote, role, rating (1-5), result                             |
+| `ironfit_pricing`     | Pricing Plans | Pricing cards          | price, period, features, popular, btn_text                    |
+| `ironfit_booking`     | Bookings      | Form submissions       | email, phone, goal, message, status                           |
 
 All meta keys use the `ifc_` prefix to avoid conflicts. CPTs register under the **IronFit Core** top-level menu for automatic sub-navigation.
 
