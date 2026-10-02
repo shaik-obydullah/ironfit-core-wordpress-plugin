@@ -1010,7 +1010,7 @@ add_action( 'wp_ajax_nopriv_oifc_submit_booking', 'oifc_handle_booking_form' );
 function oifc_register_booking_form_assets() {
     wp_register_script(
         'oifc-booking-form',
-        OIFC_PLUGIN_URL . 'assets/js/booking-form.js',
+        OIFC_PLUGIN_URL . 'assets/js/oifc-booking-form.js',
         [],
         OIFC_VERSION,
         true
@@ -1063,7 +1063,7 @@ function oifc_booking_form_shortcode( $atts ) {
             <h2 class="oifc-booking-form__title"><?php echo esc_html( $atts['title'] ); ?></h2>
         <?php endif; ?>
 
-        <?php // The oifc-booking-form class is what booking-form.js binds to. ?>
+        <?php // The oifc-booking-form class is what oifc-booking-form.js binds to. ?>
         <form class="oifc-booking-form" method="post"
             action="<?php echo esc_url( admin_url( 'admin-ajax.php' ) ); ?>">
             <input type="hidden" name="action" value="oifc_submit_booking">
